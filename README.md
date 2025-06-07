@@ -3,18 +3,24 @@
 
 A simple and responsive chatbot UI built with HTML, CSS, and JavaScript. This app simulates a basic chatbot interface and is perfect for beginners, UI demos, or for integrating real chatbot logic later.
 
-## ✨ Features
+## 🎯 Features
 
-- Clean and minimal design
-- Mobile-responsive layout
-- Auto-scroll with new messages
-- Easily customizable for real chatbot APIs or logic
+- ✨ Clean and minimal UI, easy to integrate
+- 🧩 Fully responsive and mobile-friendly
+- 🗃️ Message history stored in the browser via **localStorage**
+- 🧠 Simulates chatbot replies (random or programmed responses)
+- 🛠 Easily extendable to connect with real chatbot APIs
 
-## 🧪 Technologies Used
+---
 
-- HTML5
-- CSS3
-- JavaScript (Vanilla)
+## 🛠️ Technologies
+
+- **HTML5** – Basic structure of the app  
+- **CSS3** – Styled layout and animations  
+- **JavaScript** – Core logic and DOM interactions  
+- **localStorage** – Persistent chat storage (no database needed)
+
+---
 
 ## 📦 What’s Included
 
