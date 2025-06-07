@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AskBoot</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/88e12c0638.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="chatbot-popup">
+        <div class="container">
+            <div class="hidder">
+                <div class="logo">
+                    <i class="fa-solid fa-robot"></i>
+                    <p>Chatbot</p>
+                </div>
+               <div class="hidder-icons">
+                 <i class="fa-solid fa-trash" id="clear-chat"></i>
+                 <i class="fa-solid fa-chevron-down" id="close-chatbot"></i>    
+               </div>
+            </div>
+            <div class="body">
+                <div class="botMsg">
+                    <i class="fa-solid fa-robot"></i>
+                    <div class="textBot">
+                        <p>Hey There How can I help you today?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="inputs">
+                    <textarea name="uerText" class="msgInput" required></textarea>
+                    <div class="btns">
+                        <i class="fa-regular fa-face-smile select-imojies" id="select-imojies"></i>
+                        <div class="fill-upload-wrapper">
+                            <input type="file" accept="images/*" id="fill-input" hidden>
+                            <img src="#">
+                            <button class="fa-solid fa-paperclip" id="fill-upload"></button>
+                            <button class="fa-solid fa-xmark close"></button>
+                        </div>
+                        <i class="fa-solid fa-arrow-up sendMsg"></i>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+        <div class="touggleBtn">
+            <i class="fa-solid fa-comment" id=""></i>   
+            <i class="fa-solid fa-xmark" id="close-chatbot"></i>
+        </div>
+    </div>
+    <!-- linking emoji script -->
+    <script src="https://cdn.jsdelivr.net/npm/emoji-mart@latest/dist/browser.js"></script>
+
+    <!-- linking custom script -->
+    <script src="main.js"></script>
+</body>
+</html>
