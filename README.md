@@ -13,6 +13,11 @@ A simple and responsive chatbot UI built with HTML, CSS, and JavaScript. This ap
 
 ---
 
+## 🚀 Live Demo
+
+👉 [Click here to try the live version](https://hamid-ben-hamou.github.io/chatBotApp/)
+
+
 ## 🛠️ Technologies
 
 - **HTML5** – Basic structure of the app  
