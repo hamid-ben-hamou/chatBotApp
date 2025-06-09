@@ -15,6 +15,7 @@
     min-height: 100vh;
     background: linear-gradient(#eeefff, #c8c7ff);
     padding: var(--main-padd);
+    overflow: scroll;
 }
 
 .container{
