@@ -27,13 +27,11 @@
     background-color: #fff;
     width: 450px;
     border-radius: 10px;
-/*     overflow: hidden; */
     transform-origin: bottom right;
     /*  */
     opacity: 0; 
     pointer-events: none;
     transition: all 0.1s ease;
-    background-color: red;
 }
 body.show-chatbot .container {
     opacity: 1;
