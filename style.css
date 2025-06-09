@@ -15,7 +15,6 @@
     min-height: 100vh;
     background: linear-gradient(#eeefff, #c8c7ff);
     padding: var(--main-padd);
-    overflow: scroll;
 }
 
 .container{
@@ -27,6 +26,7 @@
     background-color: #fff;
     width: 450px;
     border-radius: 10px;
+    overflow: hidden;
     transform-origin: bottom right;
     /*  */
     opacity: 0; 
@@ -44,7 +44,7 @@ body.show-chatbot .container {
         border-radius: 0;
         display: flex;
         flex-direction: column;
-        height:  100vh;
+        height: 100vh;
     }
 }
 .hidder{
@@ -176,6 +176,7 @@ body.show-chatbot .container {
 .footer {
     padding: var(--main-padd);
     position: relative;
+    /* top: -30px; */
 }
 .footer .inputs{
     display: flex;
