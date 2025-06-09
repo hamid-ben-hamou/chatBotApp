@@ -176,7 +176,7 @@ body.show-chatbot .container {
 .footer {
     padding: var(--main-padd);
     position: relative;
-    top: 0;
+    top: -30px;
 }
 .footer .inputs{
     display: flex;
