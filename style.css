@@ -20,9 +20,9 @@
 .container{
     position: absolute;
     z-index: 1111;
-    top: 50%;
+    top: 0;
     left: 50%;
-    transform: translate(-50%, -50%) scale(0.2);
+    transform: translate(-50%) scale(0.2);
     background-color: #fff;
     width: 450px;
     border-radius: 10px;
@@ -35,12 +35,12 @@
     /* added */
     display: flex;
     flex-direction: column;
-    max-height: 100vh;
+    max-height: 94vh;
 }
 body.show-chatbot .container {
     opacity: 1;
     pointer-events: auto;
-    transform: translate(-50%, -50%) scale(1);
+    transform: translate(-50%) scale(1);
 }
 @media (max-width: 540px) {
     .container{
