@@ -32,6 +32,10 @@
     opacity: 0; 
     pointer-events: none;
     transition: all 0.1s ease;
+    /* added */
+    display: flex;
+    flex-direction: column;
+    max-height: 90vh;
 }
 body.show-chatbot .container {
     opacity: 1;
@@ -96,6 +100,9 @@ body.show-chatbot .container {
     overflow-y: auto;
     scrollbar-width: thin;
     scrollbar-color: #ccccf5 transparent;
+    /* added */
+    flex: 1;
+    min-height: 0;
 }
 @media (max-width: 540px) {
     .body{
@@ -176,7 +183,10 @@ body.show-chatbot .container {
 .footer {
     padding: var(--main-padd);
     position: relative;
-    /* top: -30px; */
+    /* added  */
+    flex-shrink: 0;
+    position: static !important;
+    top: 0 !important;
 }
 .footer .inputs{
     display: flex;
