@@ -35,7 +35,7 @@
     /* added */
     display: flex;
     flex-direction: column;
-    max-height: 90vh;
+    max-height: 100vh;
 }
 body.show-chatbot .container {
     opacity: 1;
