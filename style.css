@@ -20,11 +20,12 @@
 .container{
     position: absolute;
     z-index: 1111;
-    top: 0;
+    top: 50%;
     left: 50%;
-    transform: translate(-50%) scale(0.2);
+    transform: translate(-50%,-50%) scale(0.2);
     background-color: #fff;
     width: 450px;
+    height: 490px;
     border-radius: 10px;
     overflow: hidden;
     transform-origin: bottom right;
@@ -35,20 +36,26 @@
     /* added */
     display: flex;
     flex-direction: column;
-    max-height: 94vh;
 }
 body.show-chatbot .container {
     opacity: 1;
     pointer-events: auto;
-    transform: translate(-50%) scale(1);
+    transform: translate(-50%, -50%) scale(1);
 }
 @media (max-width: 540px) {
     .container{
         width: 100%;
         border-radius: 0;
-        display: flex;
-        flex-direction: column;
-        height: 100vh;
+        height: 100%;
+        max-height: 95vh;
+        top: 0;
+        left: 0;
+        transform: translate(0, 0) scale(0.2);
+    }
+    body.show-chatbot .container {
+        opacity: 1;
+        pointer-events: auto;
+        transform: translate(0, 0) scale(1);
     }
 }
 .hidder{
@@ -106,7 +113,7 @@ body.show-chatbot .container {
 }
 @media (max-width: 540px) {
     .body{
-        height: auto;
+        /* height: auto; */
         flex: 1;
     }
 }
@@ -114,7 +121,7 @@ body.show-chatbot .container {
     display: flex;
     align-items: end;
     gap: 5px;
-    width: 75%;
+    width: 100%;
 }
 .body .botMsg i{
     width: 27px;
@@ -134,7 +141,7 @@ body.show-chatbot .container {
     background-color: #f1f1ff;
     border-radius: 6px 6px 6px 1px;
     display: inline-block;
-    word-break: break-all;
+    /* word-break: break-all; */
 }
 .body .botMsg .waiting{
     display: flex;
@@ -169,8 +176,8 @@ body.show-chatbot .container {
     color: #fff;
     border-radius: 6px 6px 0px 6px;
     padding: 15px 10px;
-    overflow-wrap: break-word;
-    word-break: break-all;
+    /* overflow-wrap: break-word;
+    word-break: break-all; */
 }
 .body .userMsg .attachment{
     width: 50%;
@@ -182,10 +189,10 @@ body.show-chatbot .container {
 
 .footer {
     padding: var(--main-padd);
-    position: relative;
+    position: relative !important;
     /* added  */
     flex-shrink: 0;
-    position: static !important;
+    /* position: static !important; */
     top: 0 !important;
 }
 .footer .inputs{
