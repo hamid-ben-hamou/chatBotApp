@@ -8,7 +8,7 @@ const fileCancelButton = document.querySelector(".footer .fill-upload-wrapper .c
 const chatbotToggler = document.querySelector(".touggleBtn");
 const closeChatbot = document.querySelector(".hidder #close-chatbot"); 
 const clearChatBtn = document.getElementById("clear-chat");
-
+console.log(chatBody);
 const data = JSON.parse(localStorage.getItem("chatData")) || [];
 
 clearChatBtn.addEventListener("click", () => {
@@ -81,10 +81,9 @@ const generateBotResponse = async (incomingMessageDiv) => {
         const messageBotText = document.createElement("p");
         messageBotText.innerText = apiResponseText;
         messageElement.appendChild(messageBotText);
-
         currentData.push({
             type: "bot",
-            content: apiResponseText
+            content: `${apiResponseText}`
         });
         
         // add bot response to chat history
@@ -92,6 +91,7 @@ const generateBotResponse = async (incomingMessageDiv) => {
             role: "model",
             parts: [{ text: apiResponseText }]
         });
+        // console.log(chatHistory);
     
     } catch (error) {
         messageElement.innerHTML = error.message;
@@ -216,7 +216,7 @@ const picker = new EmojiMart.Picker({
     }
 });
 
-// document.querySelector(".footer .select-imojies")
+
 document.querySelector(".footer").appendChild(picker);
 
 
@@ -248,10 +248,15 @@ window.onload = (e) => {
                 let outgoingMessageDiv = creatMeassageElement(userContent, "userMsg")
                 chatBody.appendChild(outgoingMessageDiv);
             } else if (data[i][e].type === "bot") {
+                let messageTextBot = data[i][e].content;
+                let p = document.createElement("p");
+                p.innerText =  messageTextBot;
+                console.log(p);
                 let messageContentBot = `<i class="fa-solid fa-robot"></i>
                     <div class="textBot">
-                        <p>${data[i][e].content}</p>
-                    </div>`;
+                        <p>${p.innerHTML}</p>
+                    </div>`;  
+                
                 const incomingMessageDiv = creatMeassageElement(messageContentBot, "botMsg");    
                 chatBody.appendChild(incomingMessageDiv);
             }
